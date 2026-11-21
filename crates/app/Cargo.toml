@@ -1,0 +1,24 @@
+[package]
+name = "essential-app"
+description = "The application: wires the feature crates together."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "essential"
+path = "src/main.rs"
+
+[dependencies]
+essential-core = { workspace = true }
+essential-feature-greeting = { workspace = true }
+essential-feature-todo = { workspace = true }
+anyhow = { workspace = true }
+clap = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+[lints]
+workspace = true
