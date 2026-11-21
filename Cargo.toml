@@ -8,7 +8,12 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.90"
 license = "MIT"
+authors = ["Vaibhav Gosavi"]
+homepage = "https://vgseven.com"
 repository = "https://github.com/essential-registry/rust-essential"
+keywords = ["workspace", "template", "starter", "cli"]
+categories = ["development-tools"]
+readme = "README.md"
 publish = false
 
 [workspace.dependencies]
