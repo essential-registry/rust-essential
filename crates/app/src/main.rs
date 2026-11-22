@@ -33,6 +33,7 @@ fn main() -> Result<()> {
     tracing_subscriber::fmt()
         .with_env_filter(EnvFilter::new(&config.log_level))
         .init();
+    tracing::debug!(app_name = %config.app_name, "configuration loaded");
 
     match Cli::parse().command {
         Command::Greet { name } => println!("{}", greet(&name, &config.app_name)?),
